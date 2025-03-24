@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технологийн Сургуулийн Танилцуулга</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    
+    <header class="bg-blue-600 text-white p-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Технологийн Сургууль</h1>
+
+            <button id="mobile-menu-button" class="md:hidden text-white" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <ul id="nav-links" class="hidden md:flex space-x-6">
+                <li><a href="#" class="hover:text-gray-300">Головна</a></li>
+                <li><a href="#" class="hover:text-gray-300">Танилцуулга</a></li>
+                <li><a href="#" class="hover:text-gray-300">Үйлчилгээнүүд</a></li>
+                <li><a href="#" class="hover:text-gray-300">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="slideshow">
+        <img id="zurag" class="w-full h-96 object-cover" src="mandakh 1.png" alt="mandahk zurag">
+    </div>
+
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Мандах Их Сургуульд Яагаад Сонгох Ёстой Вэ?</h2>
+            <p class="mb-4">Мандах Их Сургууль нь олон давуу талтай:</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="text-sm">
+                    <ul class="list-disc text-left space-y-1">
+                        <li>Орчин үеийн тохилог оюутны байртай</li>
+                        <li>Үндэсний болон олон улсад магадлан итгэмжлэгдсэн</li>
+                        <li>Төгсөгчдийн хөдөлмөр эрхлэлт хамгийн өндөр</li>
+                        <li>Хөндлөнгийн олон улсын байгууллагаар үнэлүүлдэг</li>
+                        <li>Төлбөрийн уян хатан нөхцөлийг санал болгодог</li>
+                        <li>ISO 9001:2015 олон улсын чанарын болон ISO 21001:2018 боловсролын менежментийн тогтолцоог нэвтрүүлсэн</li>
+                        <li>Тусгай хэрэгцээт суралцагчдад ээлтэй орчинг бүрдүүлсэн</li>
+                        <li>Таньд амжилт хүсэе</li>
+                    </ul>
+                </div>
+                <div class="text-lg">
+                    <ul class="list-disc text-left space-y-1">
+                        <li>Чанартай сургалт, чадварлаг боловсон хүчинтэй</li>
+                        <li>Олон төрлийн оюутны тэтгэлэг, оюутныг хөгжүүлэх клуб дугуйлантай</li>
+                        <li>Шилдэг сургалтын хөтөлбөртэй</li>
+                        <li>Сургууль нь хотын төвийн А бүсэд байрлал бүхий таатай орчинтой</li>
+                        <li>Хос диплом болон хамтарсан хөтөлбөртэй</li>
+                    </ul>
+                </div>
+                <div class="text-sm">
+                    <ul class="list-disc text-left space-y-1">
+                        <li>Орчин үеийн тохилог оюутны байртай</li>
+                        <li>Үндэсний болон олон улсад магадлан итгэмжлэгдсэн</li>
+                        <li>Төгсөгчдийн хөдөлмөр эрхлэлт хамгийн өндөр</li>
+                        <li>Хөндлөнгийн олон улсын байгууллагаар үнэлүүлдэг</li>
+                        <li>Төлбөрийн уян хатан нөхцөлийг санал болгодог</li>
+                        <li>ISO 9001:2015 олон улсын чанарын болон ISO 21001:2018 боловсролын менежментийн тогтолцоог нэвтрүүлсэн</li>
+                        <li>Тусгай хэрэгцээт суралцагчдад ээлтэй орчинг бүрдүүлсэн</li>
+                        <li>Таньд амжилт хүсэе</li>
+                    </ul>
+                </div>
+                <div class="text-lg">
+                    <ul class="list-disc text-left space-y-1">
+                        <li>Чанартай сургалт, чадварлаг боловсон хүчинтэй</li>
+                        <li>Олон төрлийн оюутны тэтгэлэг, оюутныг хөгжүүлэх клуб дугуйлантай</li>
+                        <li>Сургууль нь хотын төвийн А бүсэд байрлал бүхий таатай орчинтой</li>
+                        <li>Баянгол дүүрэг, 16-р хороо, Амарсанаагийн гудамж 18/1, Улаанбаатар хот, Монгол, Шуудангийн хаяг: УБ-16040, Ш/Х:88, Мандах Их Сургууль</li>
+                        <li>Холбогдох утас
+
+                            7018-5950, 7018-5949</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const images = [
+            'c:\\Users\\User\\Downloads\\ab7823d9853276253172460217ccc6b1f79f4969.jpg',
+            'c:\\Users\\User\\Downloads\\mandakh 2.jpg',
+            'c:\\Users\\User\\Downloads\\images (13).jpg',
+        ];
+
+        let currentIndex = 0;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('zurag').src = images[currentIndex];
+        }, 2000);
+
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+
+</html>
